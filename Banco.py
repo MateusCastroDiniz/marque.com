@@ -18,4 +18,5 @@ class Banco:
                  usuario text,
                  senha text)""")
         self.conexao.commit()
-        c.close() 
+        c.close()
+#  se afobe não fabiano2
