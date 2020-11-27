@@ -20,5 +20,4 @@ class Banco:
         self.conexao.commit()
         c.close()
         
-        
-        
+#  Se afobe não fabiano 
