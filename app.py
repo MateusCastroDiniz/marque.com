@@ -46,8 +46,41 @@ class Appliction:
         self.titulo["font"] = ("Calibri", "9", "bold")
         self.titulo.pack()
 
-        self.lbidusuario = Label(self.cont2, text="IdUsuario", font=self.fonte, width=10)
-        self.lbidusuario.pack(side=LEFT)
+        self.lblidusuario = Label(self.cont2, text="IdUsuario", font=self.fonte, width=10)
+        self.lblidusuario.pack(side=LEFT)
+
+        self.txtidusuario = Entry(self.cont2)
+        self.txtidusuario["width"] = 10
+        self.txtidusuario["font"] = self.fonte
+        self.txtidusuario.pack(side=LEFT)
+
+        self.btnbuscar = Label(self.cont3, text="Busca de Identificação:", font=self.fonte, width=10)
+        self.btnbuscar["command"] = self.buscarusuario
+        self.btnbuscar.pack(side=LEFT)
+
+        self.lblnome = Label(self.conte3, text="Nome:", font=self.fonte, width=10)
+        self.lblnome.pack(side=LEFT)
+
+        self.txtnome = Entry(self.cont3)
+        self.txtnome["width"] = 25
+        self.txtnome["font"] = self.fonte
+        self.txtnome.pack(side=LEFT)
+
+        self.lbltelefone = Label(self.cont4, text="Telefone:", font=self.fonte, width=10)
+        self.lbltelefone.pack()
+
+        self.txttelefone = Entry(self.cont4)
+        self.txttelefone["width"] = 25
+        self.txttelefone["font"] = self.fonte
+        self.txttelefone.pack(side=LEFT)
+
+        self.lblemail = Label(self.cont5, text="E-mail", font=self.fonte, width=10)
+        self.lblemail.pack(side=LEFT)
+
+        self.txtemail = Entry(self.cont5)
+        self.txtemail
+
+
 
 
 root = Tk()

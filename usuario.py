@@ -2,7 +2,7 @@ from Banco import Banco
 class usuarios(object):
 
 
-    def __init__(self, idusuario= 0, nome = "", telefone = "", email = "", usuario = "", senha= ""):
+    def __init__(self, idusuario= "", nome = "", telefone = "", email = "", usuario = "", senha= ""):
         self.info = {}
         self.idusuario = idusuario
         self.nome = nome
@@ -35,8 +35,8 @@ class usuarios(object):
             c = banco.conexao.cursor()
 
             c.execute("update usuarios set nome = '" + self.nome + "',telefone = '" + self.telefone +
-                      "', email = '" + self.email +"', usuario = '" + self.usuario + "', senha = '"
-                      + self.senha +"' where idusuario = '" + self.idusuario + " ")
+                      "', email = '" + self.email + "', usuario = '" + self.usuario + "', senha = '" + self.senha +
+                      "' where idusuario = " + self.idusuario + " ")
 
 
             banco.conexao.commit()
