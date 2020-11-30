@@ -1,8 +1,9 @@
 from Banco import Banco
+
+
 class usuarios(object):
 
-
-    def __init__(self, idusuario= "", nome = "", telefone = "", email = "", usuario = "", senha= ""):
+    def __init__(self, idusuario="", nome="", telefone="", email="", usuario="", senha=""):
         self.info = {}
         self.idusuario = idusuario
         self.nome = nome
@@ -75,6 +76,7 @@ class usuarios(object):
                 self.usuario = linha[4]
                 self.senha = linha[5]
 
+#  Essa parte do código precisa ser revisada.
             c.close()
             return "Busca feita com sucesso!"
         except:
