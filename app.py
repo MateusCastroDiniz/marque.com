@@ -2,7 +2,7 @@ from usuario import usuarios
 from tkinter import *
 
 
-class Appliction:
+class Application:
 
     def __init__(self, master=None):
         self.fonte = ("Verdana", "10")
@@ -58,7 +58,7 @@ class Appliction:
         self.btnbuscar["command"] = self.buscarusuario
         self.btnbuscar.pack(side=LEFT)
 
-        self.lblnome = Label(self.conte3, text="Nome:", font=self.fonte, width=10)
+        self.lblnome = Label(self.cont3, text="Nome:", font=self.fonte, width=10)
         self.lblnome.pack(side=LEFT)
 
         self.txtnome = Entry(self.cont3)
@@ -78,11 +78,11 @@ class Appliction:
         self.lblemail.pack(side=LEFT)
 
         self.txtemail = Entry(self.cont5)
-        self.txtemail
-
-
+        self.txtemail["width"] = 25
+        self.txtemail["font"] = self.fonte
+        self.txtemail.pack(side=LEFT)
 
 
 root = Tk()
-Appliction(root)
+Application(root)
 root.mainloop()
