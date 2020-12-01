@@ -1,7 +1,7 @@
 from Banco import Banco
 
 
-class usuarios(object):
+class Usuarios(object):
 
     def __init__(self, idusuario="", nome="", telefone="", email="", usuario="", senha=""):
         self.info = {}
@@ -13,7 +13,7 @@ class usuarios(object):
         self.senha = senha
 
 #  Insert User code
-    def insertUser(self):
+    def insertuser(self):
         banco = Banco()
         try:
 
@@ -38,7 +38,6 @@ class usuarios(object):
             c.execute("update usuarios set nome = '" + self.nome + "',telefone = '" + self.telefone +
                       "', email = '" + self.email + "', usuario = '" + self.usuario + "', senha = '" + self.senha +
                       "' where idusuario = " + self.idusuario + " ")
-
 
             banco.conexao.commit()
             c.close()
