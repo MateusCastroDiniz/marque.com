@@ -1,6 +1,8 @@
 from Banco import Banco
 
 
+#  Código finalizado!
+
 class Usuarios(object):
 
     def __init__(self, idusuario="", nome="", telefone="", email="", usuario="", senha=""):
@@ -12,7 +14,7 @@ class Usuarios(object):
         self.usuario = usuario
         self.senha = senha
 
-#  Insert User code
+#  Insert User code (Concluído).
     def insertuser(self):
         banco = Banco()
         try:
@@ -25,10 +27,11 @@ class Usuarios(object):
             banco.conexao.commit()
             c.close()
             return "Usuário cadastrado com sucesso!"
-        except:
-            return "Ocorreu um erro no processo de inscrição"
+        except ValueError:
+            return "Houve um problema ao cadastrar o usuário"
 
-#  Update User code
+#  Update User code (Concluído).
+
     def updateuser(self):
         banco = Banco()
         try:
@@ -42,7 +45,7 @@ class Usuarios(object):
             banco.conexao.commit()
             c.close()
             return "Cadastro de usuário atualizado com sucesso!"
-        except:
+        except ValueError:
             return "Houve um erro ao atualizar o seu cadastro."
 
     def deleteuser(self):
@@ -56,7 +59,7 @@ class Usuarios(object):
             c.close()
 
             return "Cadastro excluído com sucesso."
-        except:
+        except ValueError:
             return "Houve um erro ao excuír seu cadastro na MarqueCom."
 
     def selectuser(self, idusuario):
@@ -75,8 +78,8 @@ class Usuarios(object):
                 self.usuario = linha[4]
                 self.senha = linha[5]
 
-#  Essa parte do código precisa ser revisada.
+#  Revisão de código pendente.
             c.close()
             return "Busca feita com sucesso!"
-        except:
+        except ValueError:
             return "Não houve resultados na busca."
