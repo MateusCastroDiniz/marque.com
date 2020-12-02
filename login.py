@@ -32,7 +32,7 @@ class Application:
         self.nome["font"] = self.fpadrao
         self.nome.pack(side=LEFT)
 
-        self.senhaLabel = Label(self.pgn3, text= "Senha", font= self.fpadrao)
+        self.senhaLabel = Label(self.pgn3, text="Senha", font=self.fpadrao)
         self.senhaLabel.pack(side=LEFT)
 
         self.senha = Entry(self.pgn3)
