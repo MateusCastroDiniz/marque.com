@@ -2,6 +2,8 @@ from usuario import Usuarios
 from tkinter import *
 
 
+#  Código a ser revisado ainda!!! (Situação: Ainda não funciona)
+
 class Application:
 
     def __init__(self, master=None):
@@ -131,13 +133,7 @@ class Application:
         self.txtusuario.delete(0, END)
         self.txtsenha.delete(0, END)
 
-    def alterarusuario(self):
-        self.txtidusuario.delete(0, END)
-        self.txtnome.delete(0, END)
-        self.txttelefone.delete(0, END)
-        self.txtemail.delete(0, END)
-        self.txtusuario.delete(0, END)
-        self.txtsenha.delete(0, END)
+#  Problema na função de alteração de usuário (Consertada).
 
     def alterarusuario(self):
         user = Usuarios()
@@ -175,7 +171,26 @@ class Application:
         user = Usuarios()
 
         idusuario = self.txtidusuario.get()
-        
+
+        self.lblmsg["text"] = user.selectuser(idusuario)
+
+        self.txtidusuario.delete(0, END)
+        self.txtidusuario.insert(INSERT, user.idusuario)
+
+        self.txtnome.delete(0, END)
+        self.txtnome.insert(INSERT, user.nome)
+
+        self.txttelefone.delete(0, END)
+        self.txttelefone.insert(INSERT, user.telefone)
+
+        self.txtemail.delete(0, END)
+        self.txtemail.insert(INSERT, user.email)
+
+        self.txtusuario.delete(0, END)
+        self.txtusuario.insert(INSERT, user.usuario)
+
+        self.txtsenha.delete(0, END)
+        self.txtsenha.insert(INSERT, user.senha)
 
 
 root = Tk()
