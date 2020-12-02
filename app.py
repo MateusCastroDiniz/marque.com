@@ -7,39 +7,47 @@ from tkinter import *
 class Application:
 
     def __init__(self, master=None):
-        self.fonte = ("Verdana", "10")
+        self.fonte = ("Verdana", "8")
 
         self.cont1 = Frame(master)
         self.cont1["pady"] = "10"
         self.cont1.pack()
+
         self.cont2 = Frame(master)
         self.cont2["padx"] = "20"
         self.cont2["pady"] = "5"
         self.cont2.pack()
+
         self.cont3 = Frame(master)
         self.cont3["padx"] = "20"
         self.cont3["pady"] = "5"
         self.cont3.pack()
+
         self.cont4 = Frame(master)
         self.cont4["padx"] = "20"
         self.cont4["pady"] = "5"
         self.cont4.pack()
+
         self.cont5 = Frame(master)
         self.cont5["padx"] = "20"
         self.cont5["pady"] = "5"
         self.cont5.pack()
+
         self.cont6 = Frame(master)
         self.cont6["padx"] = "20"
         self.cont6["pady"] = "5"
         self.cont6.pack()
+
         self.cont7 = Frame(master)
         self.cont7["padx"] = "20"
         self.cont7["pady"] = "5"
         self.cont7.pack()
+
         self.cont8 = Frame(master)
         self.cont8["padx"] = "20"
         self.cont8["pady"] = "10"
         self.cont8.pack()
+
         self.cont9 = Frame(master)
         self.cont9["pady"] = "15"
         self.cont9.pack()
@@ -56,9 +64,11 @@ class Application:
         self.txtidusuario["font"] = self.fonte
         self.txtidusuario.pack(side=LEFT)
 
-        self.btnbuscar = Label(self.cont3, text="Busca de Identificação:", font=self.fonte, width=10)
-        self.btnbuscar["command"] = self.buscarusuario
-        self.btnbuscar.pack(side=LEFT)
+#  Problema de botão resolvido!
+
+        self.btnBuscar = Button(self.cont2, text="Buscar", font=self.fonte, width=10)
+        self.btnBuscar["command"] = self.buscarusuario
+        self.btnBuscar.pack(side=RIGHT)
 
         self.lblnome = Label(self.cont3, text="Nome:", font=self.fonte, width=10)
         self.lblnome.pack(side=LEFT)
@@ -69,7 +79,7 @@ class Application:
         self.txtnome.pack(side=LEFT)
 
         self.lbltelefone = Label(self.cont4, text="Telefone:", font=self.fonte, width=10)
-        self.lbltelefone.pack()
+        self.lbltelefone.pack(side=LEFT)
 
         self.txttelefone = Entry(self.cont4)
         self.txttelefone["width"] = 25
@@ -101,15 +111,15 @@ class Application:
         self.txtsenha.pack(side=LEFT)
 
         self.btnInserir = Button(self.cont8, text="Inserir", font=self.fonte, width=12)
-        self.btnInserir["command"] = self.inserirUsuario
+        self.btnInserir["command"] = self.inserirusuario
         self.btnInserir.pack(side=LEFT)
 
         self.btnAlterar = Button(self.cont8, text="Alterar", font=self.fonte, width=12)
-        self.btnAlterar["command"] = self.alterarUsuario
+        self.btnAlterar["command"] = self.alterarusuario
         self.btnAlterar.pack(side=LEFT)
 
         self.btnExcluir = Button(self.cont8, text="Excluir", font=self.fonte, width=12)
-        self.btnExcluir["command"] = self.excliorUsuario
+        self.btnExcluir["command"] = self.excluirusuario
         self.btnExcluir.pack(side=LEFT)
 
         self.lblmsg = Label(self.cont9, text="")
@@ -125,7 +135,7 @@ class Application:
         user.usuario = self.txtusuario.get()
         user.senha = self.txtsenha.get()
 
-        self.lblmsg["text"] = user.inserirUsuario()
+        self.lblmsg["text"] = user.inserirusuario
 
         self.txtidusuario.delete(0, END)
         self.txtnome.delete(0, END)
