@@ -25,7 +25,7 @@
 
 /*!---------- GLOBAL STYLES ----------*/
 body {
-  background: #eee;
+  background: rgb(216, 216, 216);
   -webkit-backface-visibility: hidden;
 }
 .main-container,
@@ -207,7 +207,6 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 h6.light {
   font-weight: 300;
