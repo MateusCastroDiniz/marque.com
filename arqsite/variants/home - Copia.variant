@@ -6,11 +6,10 @@
         <title>Marque.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/theme-blue.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/theme-fairsky.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     </head>
@@ -21,13 +20,13 @@
 
 
 
-			<nav class="nav-1 overlay">
+			<nav class="nav-1">
 				<div class="navbar">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-3 col-sm-6 col-xs-4">
 								<a href="#">
-									<div class="vnu"><img class="logo" alt="Logo" src="img/logo-dark.png"></div>
+									<img class="logo" alt="Logo" src="img/logo-dark.png">
 								</a>
 							</div>
 
@@ -43,13 +42,13 @@
 							<div class="col-md-6 text-center col-md-pull-3 col-sm-12 col-xs-12">
 								<ul class="menu">
 									<li>
-										<a href="arquivosSite/home.html" target="_self">&nbsp; &nbsp; &nbsp;Home&nbsp; &nbsp;&nbsp;</a>
+										<a href="file:///C:/Users/Waleska/Desktop/arquivosSite/home.html" target="_self">&nbsp; &nbsp; &nbsp;Home&nbsp; &nbsp;&nbsp;</a>
 									</li><li>
 										<a href="#" class="inner-link" target="_blank">&nbsp; &nbsp; &nbsp;Loja&nbsp; &nbsp;&nbsp;</a>
 									</li><li>
-										<a href="arquivosSite/home.html" target="_self">&nbsp; &nbsp; &nbsp;A marqueCom&nbsp; &nbsp;&nbsp;</a>
+										<a href="file:///C:/Users/Waleska/Desktop/arquivosSite/home.html" target="_self">&nbsp; &nbsp; &nbsp;A marqueCom&nbsp; &nbsp;&nbsp;</a>
 									</li><li>
-										<a href="arquivosSite/home.html" target="_self">&nbsp; &nbsp; &nbsp;Contate-nos&nbsp; &nbsp;&nbsp;</a>
+										<a href="file:///C:/Users/Waleska/Desktop/arquivosSite/home.html" target="_self">&nbsp; &nbsp; &nbsp;Contate-nos&nbsp; &nbsp;&nbsp;</a>
 									</li>
 
 
@@ -110,30 +109,6 @@
 									</div>
 								</div>
 							</div>
-						</li><li>
-							<div class="background-image-holder">
-								<img alt="Background Image" class="background-image" src="img/hero10.jpg">
-							</div>
-
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12 text-center">
-										<h1 class="text-white">Texto de introdução</h1>
-									</div>
-								</div>
-							</div>
-						</li><li>
-							<div class="background-image-holder">
-								<img alt="Background Image" class="background-image" src="img/hero10.jpg">
-							</div>
-
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12 text-center">
-										<h1 class="text-white">Texto de introdução</h1>
-									</div>
-								</div>
-							</div>
 						</li>
 					</ul>
 				</div>
@@ -143,7 +118,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<ul class="hover-gallery" speed="2000">
+							<ul class="hover-gallery" speed="5000">
 								<li>
 									<img alt="Hover Item" src="img/small2.jpg">
 								</li>
@@ -254,22 +229,26 @@
 				<div class="row">
 					<div class="col-sm-4 text-center feature">
 						<i class="icon-picture-streamline-1"></i>
-						<h5 class="text-white">Sobre a arte</h5>
+						<h5 class="text-white">Intuitive Page Builder</h5>
 						<p class="text-white">
-							Descreva o processo criativo da loja e mostre pontos positivos.</p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						</p>
 					</div>
 
 					<div class="col-sm-4 text-center feature">
 						<i class="icon-dashboard-speed-streamline"></i>
-						<h5 class="text-white">Sobre o tempo de produção</h5>
+						<h5 class="text-white">Designed To Convert</h5>
 						<p class="text-white">
-							Descreva o tempo de produção na linha de produção (deixar que no contrato com o cliente também é negociável o tempo de produção.)</p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						</p>
 					</div>
 
 					<div class="col-sm-4 text-center feature">
 						<i class="pe-7s-light"></i>
-						<h5 class="text-white">Sobre a equipe de criação</h5>
-						<p class="text-white">Descreva o processo criativo da loja e aponte fatores favoráveis a equipe.</p>
+						<h5 class="text-white">Truly Flexible Style</h5>
+						<p class="text-white">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -278,8 +257,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
-							<h6>Serviços marquecom</h6>
-							<h4>Conheça nossos produtos.</h4>
+							<h6>Aba de agendamentos de serviços</h6>
+							<h4>Aqui fica o texto para apresentação da aba de pedidos.</h4>
 							<a href="#" class="btn">Nossos produtos »</a>
 						</div>
 					</div>
@@ -336,14 +315,14 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<h3>Contate-nos.</h3>
+							<h3>Contate-nos!</h3>
 						</div>
 					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-							<form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly." success-redirect="google.com">
-								<input type="text" name="name" class="signup-name-field validate-required" placeholder="Digite seu nome">
-								<input type="text" name="email" class="validate-required validate-email signup-email-field" placeholder="Digite seu e-mail">
-								<textarea rows="4" name="message" class="validate-required" placeholder="Agora, sua mensagem"></textarea>
-								<input type="submit" value="Enviar »">
+							<form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+								<input type="text" name="name" class="signup-name-field validate-required" placeholder="Your Name">
+								<input type="text" name="email" class="validate-required validate-email signup-email-field" placeholder="Email Address">
+								<textarea rows="4" name="message" class="validate-required" placeholder="Your Message"></textarea>
+								<input type="submit" value="Submit Enquiry »">
 								<p class="sub">
 									* We don’t share your personal info with anyone. Check out our <a href="privacy.html"> Privacy Policy</a> for more information.
 								</p>
@@ -355,31 +334,6 @@
 
 				</div>
 			</section>
-			<footer class="footer footer-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4">
-							<ul class="social-links">
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-youtube-alt"></i></a></li>
-								<li><a href="https://www.instagram.com/marquecom" target="_blank"><i class="icon-instagram"></i></a></li>
-							</ul>
-						</div>
-
-						<div class="col-sm-4 text-center">
-							<p class="sub">
-								© Powered by MarqueCom</p>
-						</div>
-
-						<div class="col-sm-4 text-right">
-							<a href="#">
-								<img alt="Logo" src="img/logo-dark.png">
-							</a>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
 
 
@@ -394,3 +348,5 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
+				
